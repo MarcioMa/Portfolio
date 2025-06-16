@@ -6,7 +6,7 @@ Desenvolvedor Full Stack Jr com foco em sistemas inteligentes, interfaces práti
 
 ## Sobre Mim
 
-Sou um desenvolvedor Full Stack apaixonado por lógica, manipulação de dados e design de interfaces. Trabalho com JavaScript, PHP, C# e estou sempre explorando novas ferramentas para entregar sistemas completos e funcionais.
+Sou um desenvolvedor Full Stack Jr apaixonado por lógica, manipulação de dados e design de interfaces. Trabalho com JavaScript, PHP, C# e estou sempre explorando novas ferramentas para entregar sistemas completos e funcionais.
 
 ---
 
@@ -17,17 +17,27 @@ Projeto completo em JavaScript com controle de ordens de serviço, cadastro de c
 
 Prints do sistema:
 
-- [dashboard.png](img/dashboard.png)
-- [login.png](img/login.png)
-- [mapa.png](img/mapa.png)
-- [ordem.png](img/ordem.png)
+- [dashboard.png](img/Dashboard.png)
+- [login.png](img/Login.png)
+- [mapa.png](img/Mapa.png)
+- [ordem.png](img/Ordem.png)
 
 
 ### Sistema de Estoque (em andamento)
 Aplicação em PHP para controle de entrada e saída de produtos, cadastro de fornecedores e alertas de estoque.
+Prints do sistema:
+
+- [Estoque-login.png](img/Estoque-login.png)
+- [Estoque-home.png](img/Estoque-home.png)
+- [Estoque-relatorio.png](img/Estoque-relatorio.png)
+- [Estoque-lista.png](img/Estoque-lista.png)
 
 ### Sistema de Registro para Triagem
 Aplicativo em C# para registro de pacientes em triagem, com controle de fluxo e históricos.
+- [triagem-tela1.png](img/triagem-tela1.png)
+- [triagem-tela2.png](img/triagem-tela2.png)
+- [triagem-tela3.png](img/triagem-tela3.png)
+- [triagem-tela4.png](img/triagem-tela4.png)
 
 ### Desenvolvimento de Games Retrô
 Projetos com foco em recriar experiências clássicas com tecnologias modernas e mecânicas retrô.
@@ -44,7 +54,7 @@ Projetos com foco em recriar experiências clássicas com tecnologias modernas e
 
 ## Link do Portfólio Online
 
-[https://marcioma.github.io/portfolio/](https://marcioma.github.io/portfolio/)
+[https://marcioma.github.io/portfolio/](https://marcioma.github.io/Portfolio/)
 
 ---
 
