@@ -17,10 +17,11 @@ Projeto completo em JavaScript com controle de ordens de serviço, cadastro de c
 
 Prints do sistema:
 
-- [dashboard.png](dashboard.png)
-- [login.png](login.png)
-- [mapa.png](mapa.png)
-- [ordem.png](ordem.png)
+- [dashboard.png](img/dashboard.png)
+- [login.png](img/login.png)
+- [mapa.png](img/mapa.png)
+- [ordem.png](img/ordem.png)
+
 
 ### Sistema de Estoque (em andamento)
 Aplicação em PHP para controle de entrada e saída de produtos, cadastro de fornecedores e alertas de estoque.
