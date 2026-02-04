@@ -1,0 +1,279 @@
+/* --- 1. Base e Tipografia --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cinza muito claro para o fundo geral */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* --- 2. Header (Igual ao seu Print) --- */
+.main-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    gap: 3rem;
+}
+
+#perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#perfil:hover {
+    transform: scale(1.05);
+}
+
+.header-content {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* --- 3. Layout e Seções --- */
+.section {
+    padding: 80px 20px;
+}
+
+.bg-white-section { background-color: #ffffff; }
+.bg-light-section { background-color: #f1f3f5; }
+
+.container {
+    background-color: transparent !important; /* Deixa o fundo da section aparecer */
+    box-shadow: none !important;
+    border: none !important;
+}
+
+#divProjeto {
+    background-color: #073763 !important; /* Fundo branco para destacar os projetos */
+}   
+/* --- 4. Cards de Projetos --- */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+    border: 1px solid #eee;
+}
+
+.project-card-body {
+    flex-grow: 1;       
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.badge-custom-bar {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-carousel {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(0.95);
+}
+/* --- Estabilidade dos Cards de Projeto --- */
+
+/* 1. Trava a altura do contêiner interno do carrossel */
+.carousel-inner {
+    height: 200px; /* Mesma altura que definimos para as imagens */
+    background-color: #eee; /* Fundo neutro caso a imagem demore a carregar */
+    border-radius: 8px 8px 0 0;
+}
+
+/* 2. Garante que a imagem preencha esse espaço rigorosamente */
+.card-img-top-carousel, 
+.carousel-item img {
+    width: 100%;
+    height: 200px !important; /* Força a altura fixa */
+    object-fit: cover;        /* Recorta sobras sem esticar */
+    object-position: top;     /* Mantém o topo do print visível */
+}
+
+/* 3. Evita que o texto balance (Layout Shift) */
+.project-card-body {
+    padding: 20px;
+    min-height: 180px;        /* Define uma altura mínima para o bloco de texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Garante que todos os cards na mesma linha tenham o mesmo tamanho */
+}
+.project-title-link {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.project-title-link:hover {
+    color: #3498db;
+}
+
+/* --- Carrossel de Tecnologias --- */
+.tech-slider {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.tech-track {
+    display: flex;
+    width: calc(250px * 22); /* Ajuste baseado no número de itens */
+    animation: scroll 20s linear infinite;
+}
+
+.tech-track:hover {
+    animation-play-state: paused; /* Pausa ao passar o mouse */
+}
+
+.tech-item {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: scale(1.15);
+}
+
+.tech-item i {
+    font-size: 2.5rem;
+}
+
+.tech-item span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+/* Animação do Movimento */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-150px * 11)); } /* Metade do número total de itens */
+}
+
+/* Gradientes nas pontas para efeito de suavidade */
+.tech-slider::before,
+.tech-slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+}
+
+.tech-slider::before { left: 0; top: 0; }
+.tech-slider::after { right: 0; top: 0; transform: rotateZ(180deg); }
+
+/* --- 5. Educação e Certificações --- */
+.timeline-item {
+    border-left: 3px solid #3498db;
+    padding: 0 0 20px 20px;
+    position: relative;
+}
+
+.cert-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.cert-item:hover {
+    transform: translateX(10px);
+    border-left: 5px solid #2c3e50;
+}
+
+/* --- 6. Botões do Carrossel --- */
+.btn-carousel-icon {
+    background-color: rgba(44, 62, 80, 0.8) !important;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.carousel-control-prev:hover .btn-carousel-icon,
+.carousel-control-next:hover .btn-carousel-icon {
+    background-color: #3498db !important;
+}
+
+/* --- 7. Utilitários --- */
+.badge-tech {
+    background-color: #34495e;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 12px;
+}

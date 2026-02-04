@@ -6,209 +6,456 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfólio | Marcio Macedo de Araujo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <style>
-        body {
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-        }
-
-        .section {
-            padding: 60px 20px;
-        }
-
         .bg-dark-blue {
             background-color: #2c3e50;
             color: white;
-        }
-
-        .project-card {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            overflow: hidden;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-    <header class="bg-dark-blue text-center text-md-start py-5 d-flex align-items-center justify-content-center justify-content-md-start" style="gap: 2rem;">
-        <img id="perfil" src="img/perfil.jpg" alt="perfil" style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-right: 2rem;">
+    <header
+        class="bg-dark-blue text-center text-md-start py-5 d-flex align-items-center justify-content-center justify-content-md-start"
+        style="gap: 2rem;">
+        <img id="perfil" src="img/perfil.jpg" alt="perfil"
+            style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-right: 2rem;">
         <div class="text-center text-md-center" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.25); width: 100%;">
             <h1 class="display-4 mb-1">Marcio Macedo de Araujo</h1>
-            <p class="lead mb-0">Desenvolvedor Full Stack Jr com foco em sistemas inteligentes, interfaces práticas e novas
+            <p class="lead mb-0">Desenvolvedor Full Stack Jr com foco em sistemas inteligentes, interfaces práticas e
+                novas
                 tecnologias</p>
         </div>
     </header>
-    <section class="section text-center">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor Full Stack junior apaixonado por lógica, dados e design. Trabalho com JavaScript, PHP, C# e
-            estou sempre explorando novas ferramentas para entregar sistemas completos e funcionais.</p>
+
+    <!-- Tecnologias utilizada -->
+    <section class="section bg-white-section overflow-hidden">
+        <div class="container">
+            <h2 class="text-center mb-5 text-dark-blue">Minha Stack Tecnológica</h2>
+
+            <div class="tech-slider">
+                <div class="tech-track">
+                    <div class="tech-item"><i class="fa-brands fa-react" style="color: #61DAFB;"></i><span>React</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-solid fa-n" style="color: #000000;"></i><span>Next.js</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-brands fa-node-js"
+                            style="color: #339933;"></i><span>Node.js</span></div>
+                    <div class="tech-item"><i class="fa-solid fa-database" style="color: #4479A1;"></i><span>SQL</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-solid fa-leaf" style="color: #47A248;"></i><span>MongoDB</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-solid fa-wind" style="color: #06B6D4;"></i><span>Tailwind</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-solid fa-gears" style="color: #555555;"></i><span>API
+                            REST</span></div>
+                    <div class="tech-item"><i class="fa-solid fa-layer-group"
+                            style="color: #ff0019;"></i><span>OutSystems</span></div>
+                    <div class="tech-item"><i class="fa-solid fa-caret-up"
+                            style="color: #000000;"></i><span>Vercel</span></div>
+                    <div class="tech-item"><i class="fa-solid fa-bolt-lightning"
+                            style="color: #00E599;"></i><span>Neon</span></div>
+                    <div class="tech-item"><i class="fa-brands fa-python"
+                            style="color: #3776AB;"></i><span>Python</span></div>
+
+                    <div class="tech-item"><i class="fa-brands fa-react" style="color: #61DAFB;"></i><span>React</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-solid fa-n" style="color: #000000;"></i><span>Next.js</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-brands fa-node-js"
+                            style="color: #339933;"></i><span>Node.js</span></div>
+                    <div class="tech-item"><i class="fa-solid fa-database" style="color: #4479A1;"></i><span>SQL</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-solid fa-leaf" style="color: #47A248;"></i><span>MongoDB</span>
+                    </div>
+                    <div class="tech-item"><i class="fa-solid fa-wind" style="color: #06B6D4;"></i><span>Tailwind</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section class="section">
-      <h2>Certificações</h2>
-      <ul class="list-unstyled">
-        <li>🔹 <strong>Programação em JavaScript</strong> — SENAC (1200h, em curso, conclusão em 2027)</li>
-        <li>🔹 <strong>ITIL v4</strong> — válida até 2028 (desde 31/03/2025)</li>
-        <li>🔹 <strong>Scrum Fundamentos</strong> — válida até 2027 (desde 31/11/2024)</li>
-        <li>🔹 <strong>PHP e MySQL</strong> — SENAC-DF</li>(Concluido em 2024)
-        <li>🔹 <strong>Banco de Dados</strong> — Fundação Bradesco</li>(Concluido em 2023)
-        <li>🔹 <strong>White Belt em Lean Six-Sigma</strong>(Concluido em 2020)</li>
-      </ul>
-    </section>
+
+    <!-- Educação e Certificações -->
     <section class="section bg-white">
         <div class="container">
-            <h2 class="text-center mb-4">Projetos</h2>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-4 text-dark-blue border-bottom pb-2">
+                        <i class="fa-solid fa-graduation-cap me-2"></i>Educação
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-item mb-4">
+                            <h5 class="fw-bold mb-1">Engenharia de Software (Bacharelado)</h5>
+                            <p class="text-primary mb-1 small">Universidade Anhanguera | 2026 - 2030</p>
+                            <span class="badge bg-info text-dark">Em andamento</span>
+                        </div>
+                        <div class="timeline-item mb-4">
+                            <h5 class="fw-bold mb-1">Técnico em Desenvolvimento de Sistemas</h5>
+                            <p class="text-primary mb-1 small">SENAC | 2024 - 2026</p>
+                            <span class="badge bg-info text-dark">Em andamento</span>
+                        </div>
+                        <div class="timeline-item mb-4">
+                            <h5 class="fw-bold mb-1">Análise e Desenvolvimento de Sistemas</h5>
+                            <p class="text-primary mb-1 small">Universidade UNOPAR | 2017 - 2019</p>
+                            <span class="badge bg-success text-dark">Concluido</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="mb-4 text-dark-blue border-bottom pb-2">
+                        <i class="fa-solid fa-certificate me-2"></i>Certificações
+                    </h2>
+                    <ul class="list-unstyled">
+                        <li class="cert-item shadow-sm p-3 mb-3 bg-light rounded-3 d-flex align-items-center">
+                            <i class="fa-brands fa-js text-warning fs-3 me-3"></i>
+                            <div>
+                                <span class="fw-bold d-block">Programação em JavaScript (1200h)</span>
+                                <small class="text-muted">SENAC — Previsão 2026</small>
+                            </div>
+                        </li>
+                        <li class="cert-item shadow-sm p-3 mb-3 bg-light rounded-3 d-flex align-items-center">
+                            <i class="fa-solid fa-shield-halved text-success fs-3 me-3"></i>
+                            <div>
+                                <span class="fw-bold d-block">ITIL v4 & Scrum Fundamentos</span>
+                                <small class="text-muted">Válidas até 2028</small>
+                            </div>
+                        </li>
+                        <li class="cert-item shadow-sm p-3 mb-3 bg-light rounded-3 d-flex align-items-center">
+                            <i class="fa-solid fa-database text-primary fs-3 me-3"></i>
+                            <div>
+                                <span class="fw-bold d-block">PHP, MySQL e Banco de Dados</span>
+                                <small class="text-muted">SENAC-DF & Fundação Bradesco</small>
+                            </div>
+                        </li>
+                        <li class="cert-item shadow-sm p-3 mb-3 bg-light rounded-3 d-flex align-items-center">
+                            <i class="fa-solid fa-bolt text-secondary fs-3 me-3"></i>
+                            <div>
+                                <span class="fw-bold d-block">White Belt em Lean Six-Sigma</span>
+                                <small class="text-muted">Concluído em 2020</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="section py-5">
+        <h1 class="text-center mb-5">Meus Projetos</h1>
+        <div id="divProjeto" class="container p-4 rounded-3  shadow-sm">
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 bg-light project-card h-100">
-                        <h4>Sistema de Gestão para Lavanderia</h4>
-                        <p>Projeto completo em JavaScript com controle de ordens de serviço, cadastro de clientes e
-                            geração de relatórios.</p>
-                        <p>Prints do sistema:</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center">
-                            <a href="img/Login.png" target="_blank">
-                                <img src="img/Login.png" alt="Login"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Dashboard.png" target="_blank">
-                                <img src="img/Dashboard.png" alt="Dashboard"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Mapa.png" target="_blank">
-                                <img src="img/Mapa.png" alt="Mapa"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Ordem.png" target="_blank">
-                                <img src="img/Ordem.png" alt="Ordem"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
+                <!-- Projeto Lavanderia -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card bg-light h-100 shadow-sm border-0">
+                        <div id="carouselLavanderia" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/Login.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Login">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Dashboard.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Dashboard">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Mapa.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Mapa">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Ordem.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Ordem">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLavanderia"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselLavanderia"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                        <div class="p-4 project-card-body">
+                            <div>
+                                <h4>
+                                    <a href="projetos/lavanderia/projeto-lavanderia.html"
+                                        class="text-decoration-none text-dark hover-link">
+                                        Sistema de Gestão Lavanderia
+                                    </a>
+                                </h4>
+                                <p class="text-muted small">Projeto em JavaScript com controle de ordens de serviço
+                                    e relatórios.</p>
+                            </div>
+                            <div class="badge-container">
+                                <span class="badge bg-secondary badge-custom-bar opacity-75">JavaScript / API</span>
+                                <span class="badge bg-warning badge-custom-bar">incompleto</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 bg-light project-card h-100">
-                        <h4>Sistema de Estoque (em andamento)</h4>
-                        <p>Aplicação em PHP para controle de entrada e saída de produtos, cadastro de fornecedores e
-                            alertas de estoque.</p>
-                        <p>Prints do sistema:</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center">
-                            <a href="img/Estoque-login.png" target="_blank">
-                                <img src="img/Estoque-login.png" alt="Mapa"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Estoque-home.png" target="_blank">
-                                <img src="img/Estoque-home.png" alt="Login"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Estoque-lista.png" target="_blank">
-                                <img src="img/Estoque-lista.png" alt="Dashboard"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Estoque-relatorio.png" target="_blank">
-                                <img src="img/Estoque-relatorio.png" alt="Ordem"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
+
+                <!-- Projeto Estoque -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card bg-light h-100 shadow-sm border-0">
+                        <div id="carouselEstoque" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/Estoque-home.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Home">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Estoque-lista.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Lista">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Estoque-login.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Login">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Estoque-relatorio.png"
+                                        class="d-block w-100 h-100 card-img-top-carousel" alt="Relatório">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstoque"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselEstoque"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                        <div class="p-4 project-card-body">
+                            <div>
+                                <h4>
+                                    <a href="projetos/estoque-php/projeto-estoque.html"
+                                        class="text-decoration-none text-dark hover-link">
+                                        Sistema de Estoque (PHP)
+                                    </a>
+                                </h4>
+                                <p class="text-muted small">Aplicação em PHP para controle de entrada/saída e alertas de
+                                    estoque.</p>
+                            </div>
+                            <div class="badge-container">
+                                <span class="badge bg-secondary badge-custom-bar opacity-75">PHP / MySQL</span>
+                                <span class="badge bg-success badge-custom-bar"> Concluído</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 bg-light project-card h-100">
-                        <h4>Sistema de Registro para Triagem</h4>
-                        <p>Aplicativo simples em C# para registro de triagem dos chamados feito via telefone/web, com controle de anotações e script com opção para exportar registros.</p>
-                        <p>Prints do sistema:</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center">
-                            <a href="img/triagem-tela1.png" target="_blank">
-                                <img src="img/triagem-tela1.png" alt="Login"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/triagem-tela2.png" target="_blank"></a>
-                                <img src="img/triagem-tela2.png" alt="Dashboard"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/triagem-tela3.png" target="_blank">
-                                <img src="img/triagem-tela3.png" alt="Mapa"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/triagem-tela4.png" target="_blank">
-                                <img src="img/triagem-tela4.png" alt="Ordem"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
+
+                <!-- Projeto Triagem -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card bg-light h-100 shadow-sm border-0">
+                        <div id="carouselTriagem" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/triagem-tela1.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Tela 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/triagem-tela2.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Tela 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/triagem-tela3.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Tela 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/triagem-tela4.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="Tela 4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTriagem"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTriagem"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                        <div class="p-4 project-card-body">
+                            <div>
+                            <h4>
+                                <a href="projetos/triagem/projeto-triagem.html"
+                                    class="text-decoration-none text-dark hover-link">
+                                    Registro para Triagem
+                                </a>
+                            </h4>
+                            <p class="text-muted small">Aplicativo em C# para registro de chamados e exportação de
+                                registros.</p>
+                                </div>
+                                <div class="badge-container">
+                            <span class="badge bg-secondary badge-custom-bar opacity-75">C# / .NET</span>
+                            <span class="badge bg-success badge-custom-bar">Concluído</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 bg-light project-card h-100">
-                        <h4>Desenvolvimento de Games Retrô</h4>
-                        <p>Projetos com foco em recriar experiências clássicas com tecnologias modernas e
-                            mecânicas retrô.</p>
-                        <p>Prints do sistema:</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center">
-                            <a href="img/print1.png" target="_blank">
-                                <img src="img/print1.png" alt="print1"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/print2.png" target="_blank">
-                                <img src="img/print2.png" alt="print2"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/print3.png" target="_blank">
-                                <img src="img/print3.png" alt="print3"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/print4.png" target="_blank">
-                                <img src="img/print4.png" alt="print4"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
+
+                <!-- Projeto banco de dados -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card bg-light h-100 shadow-sm border-0">
+                        <div id="carouselBancoDeDados" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/PrintDB1.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="PrintDB1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/PrintDB2.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="PrintDB2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/PrintDB3.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="PrintDB3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/PrintDB4.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="PrintDB4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBancoDeDados"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselBancoDeDados"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                        <div class="p-4 project-card-body">
+                            <h4>
+                                <a href="projetos/dbs/projeto-dbs.html"
+                                    class="text-decoration-none text-dark hover-link">
+                                    Criando, implementando e administrando DBs
+                                </a>
+                            </h4>
+                            <p class="text-muted small">Projetos com foco em criação, normalização e manutenção em DB.
+                            </p>
+                            <span class="badge bg-secondary badge-custom-bar opacity-75">MySQL / PostgreSQL / SQL</span>
+                            <span class="badge bg-success badge-custom-bar">Concluído</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 bg-light project-card h-100">
-                        <h4>Desafio Senac 2025 Consumindo API</h4>
-                        <p>Projetos com foco em consumo de API rest com uso localStorage.</p>
-                        <p>Prints do sistema:</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center">
-                            <a href="img/Imagem1.png" target="_blank">
-                                <img src="img/Imagem1.png" alt="imagem1"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Imagem2.png" target="_blank">
-                                <img src="img/Imagem2.png" alt="imagem2"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Imagem3.png" target="_blank">
-                                <img src="img/Imagem3.png" alt="imagem3"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="img/Imagem4.png" target="_blank">
-                                <img src="img/Imagem4.png" alt="imagem4"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
+
+                <!-- Projeto GAT Gestor Ativos TI -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card bg-light h-100 shadow-sm border-0">
+                        <div id="carouselGAT" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/gatPrint1.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="print1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/gatPrint2.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="print2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/gatPrint3.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="print3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/gatPrint4.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="print4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGAT"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselGAT"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                        <div class="p-4 project-card-body">
+                            <h4>
+                                <a href="projetos/gat/projeto-gat.html"
+                                    class="text-decoration-none text-dark hover-link">
+                                    GAT - Gestor de Ativos de TI
+                                </a>
+                            </h4>
+                            <p class="text-muted small">Projetos com foco gestão e controle de ativos TI interno e
+                                externo.
+                            </p>
+                            <span class="badge bg-secondary badge-custom-bar opacity-75">TYPESCRIPT / NEXT.JS / PRISMA /
+                                SQLite </span>
+                            <span class="badge bg-success badge-custom-bar">Concluído</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 bg-light project-card h-100">
-                        <h4>Criando e administrando DB</h4>
-                        <p>Projetos com foco em criação, normalização e manutenção em DB.</p>
-                        <p>Prints do DB:</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center">
-                            <a href="#" target="_blank">
-                                <img src="img/PrintDB1.png" alt="upload img"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="#" target="_blank">
-                                <img src="img/PrintDB2.png" alt="upload img"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="#" target="_blank">
-                                <img src="img/PrintDB3.png" alt="upload img"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
-                            <a href="#" target="_blank">
-                                <img src="img/PrintDB4.png" alt="upload img"
-                                    style="width: 100px; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
-                            </a>
+
+                <!-- Projeto CFP Controle financeiro Pessoal -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card bg-light h-100 shadow-sm border-0">
+                        <div id="carouselCFP" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/cfpPrint1.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="print1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/cfpPrint2.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="print2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/cfpPrint3.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="print3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/cfpPrint4.png" class="d-block w-100 h-100 card-img-top-carousel"
+                                        alt="print4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCFP"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCFP"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon btn-carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                        <div class="p-4 project-card-body">
+                            <h4>
+                                <a href="projetos/cfp/projeto-cfp.html"
+                                    class="text-decoration-none text-dark hover-link">
+                                    CFP - Controle Financeiro Pessoal
+                                </a>
+                            </h4>
+                            <p class="text-muted small">Projetos basico para controle financeiro pessoal web
+                                multiplataforma.
+                            </p>
+                            <span class="badge bg-secondary badge-custom-bar opacity-75">NEXT.JS 15 / VERCEL / NEON /
+                                PostgreSQL
+                                17</span>
+                            <span class="badge bg-success badge-custom-bar">Concluido e online</span>
                         </div>
                     </div>
                 </div>
@@ -216,12 +463,42 @@
         </div>
     </section>
 
-    <section class="section text-center">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:marmac1979@gmail.com">marmac1979@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/MarcioMa" target="_blank">github.com/MarcioMa</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/marcio-macedo-araujo-6b87a4189/"
-                target="_blank">linkedin.com/in/marcio-macedo-araujo</a></p>
+    <section class="section text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">Vamos Conversar?</h2>
+
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <a href="mailto:marmac1979@gmail.com" class="contact-link" title="Enviar Email">
+                    <div class="contact-icon-box shadow-sm">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span>Email</span>
+                </a>
+
+                <a href="https://github.com/MarcioMa" target="_blank" class="contact-link" title="Ver GitHub">
+                    <div class="contact-icon-box shadow-sm">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/marcio-macedo-araujo-6b87a4189/" target="_blank"
+                    class="contact-link" title="Ver LinkedIn">
+                    <div class="contact-icon-box shadow-sm">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="whatsapp://send?phone=55619983770283" target="_blank" class="contact-link"
+                    title="Ver WhatsApp">
+                    <div class="contact-icon-box shadow-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer class="bg-dark-blue text-center py-3">

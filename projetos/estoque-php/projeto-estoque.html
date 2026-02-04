@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detalhes do Projeto | Marcio Macedo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .bg-dark-blue { background-color: #2c3e50; color: white; }
+        .section-padding { padding: 50px 0; }
+        
+        /* Estilo da Galeria */
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer; 
+            height: 200px; 
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+        }
+        
+        /* Estilo do Badge e Listas */
+        .badge-custom { background-color: #34495e; margin-right: 5px; font-weight: 500; }
+        .competencias-lista li { margin-bottom: 8px; }
+
+        /* Estilo do Modal de Zoom */
+        #imageZoomModal .modal-content {
+            background-color: transparent; 
+            border: none;
+        }
+        #imageZoomModal .modal-body {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #zoomedImage {
+            max-width: 100%;
+            max-height: 90vh; 
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .btn-close-custom {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            z-index: 1056;
+            background-color: white;
+            opacity: 0.8;
+        }
+        .btn-close-custom:hover { opacity: 1; }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark-blue py-4 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h2 class="mb-0 h3 fw-bold">Detalhes do Projeto</h2>
+            <a href="../../index.html" class="btn btn-outline-light btn-sm fw-bold">← Voltar ao Início</a>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div class="row">
+            <div class="col-lg-5 mb-5">
+                <div class="card border-0 shadow-sm p-4">
+                    <h1 id="titulo-projeto" class="text-primary mb-3 h2">Sistema de Gestão de Estoque</h1>
+
+                    <h5 class="fw-bold">Resumo</h5>
+                    <p id="resumo-projeto" class="text-muted small">
+                        Sistema de Gestão de Estoque desenvolvido em PHP com MySQL, permitindo o cadastro, controle e
+                        gerenciamento eficiente dos produtos em estoque.
+                        O sistema oferece funcionalidades como cadastro de produtos, movimentações de entrada e saída,
+                        relatórios de estoque e controle de fornecedores.
+                    </p>
+
+                    <h5 class="fw-bold mt-4">Tecnologias Utilizadas</h5>
+                    <div id="tech-badges" class="mb-4">
+                        <li> PHP </li>
+                        <li> MySQL </li>
+                        <li> HTML </li>
+                        <li> CSS </li>
+                        <li> Bootstrap </li>
+                    </div>
+
+                    <h5 class="fw-bold">Competências Adquiridas</h5>
+                    <ul id="competencias-lista" class="text-muted small">
+                        <li>Desenvolvimento de lógica de negócios complexa no front-end e backend (CRUD completo).</li>
+                        <li>Manipulação avançada do DOM para criar interfaces dinâmicas e interativas.</li>
+                        <li>Variaveis de ambiente e configuração de banco de dados.</li>
+                        <li>Controle de rotas e acesso ao sistema usando sessões e cookies.</li>
+                        <li>Criação de páginas com HTML Semântico.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <h4 class="mb-4 fw-bold">Galeria do Sistema</h4>
+                <p class="text-muted small mb-4">Clique nas imagens para ampliar.</p>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="../../img/Estoque-login.png" alt="Tela de Login" class="zoomable-img">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="../../img/Estoque-home.png" alt="Dashboard Principal" class="zoomable-img">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="../../img/Estoque-relatorio.png" alt="Mapa de Serviços" class="zoomable-img">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="../../img/Estoque-lista.png" alt="Detalhe da Ordem de Serviço" class="zoomable-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark-blue text-center py-4 mt-auto">
+        <small class="text-white-50">&copy; 2026 Marcio Macedo de Araujo. Todos os direitos reservados.</small>
+    </footer>
+
+    <div class="modal fade" id="imageZoomModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content position-relative">
+                <div class="modal-body font-monospace">
+                    <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img id="zoomedImage" src="" alt="Imagem Ampliada">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Seleciona todos os elementos com a classe 'zoomable-img'
+            const zoomableImages = document.querySelectorAll('.zoomable-img');
+            
+            // 2. Cria a instância do Modal do Bootstrap
+            const zoomModal = new bootstrap.Modal(document.getElementById('imageZoomModal'));
+            
+            // 3. Seleciona o elemento <img> dentro do modal onde a imagem grande será mostrada
+            const zoomedImageElement = document.getElementById('zoomedImage');
+
+            // 4. Adiciona um evento de 'click' a cada imagem da galeria
+            zoomableImages.forEach(img => {
+                img.addEventListener('click', function() {
+                    // Pega o 'src' da imagem clicada
+                    const imageSrc = this.src;
+                    // Pega o 'alt' para acessibilidade
+                    const imageAlt = this.alt;
+
+                    // Define o 'src' e 'alt' da imagem dentro do modal
+                    zoomedImageElement.src = imageSrc;
+                    zoomedImageElement.alt = imageAlt;
+
+                    // Abre o modal
+                    zoomModal.show();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
